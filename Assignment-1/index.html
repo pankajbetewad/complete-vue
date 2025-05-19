@@ -27,7 +27,8 @@
         <img v-bind:src="imageUrl" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" v-bind:value="placeholderText" />
+      <input type="text" v-on:input="one($event, 'hello')" />
+      <h1>{{dummyText}}</h1>
     </section>
   </body>
 </html>
