@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First vue.js app</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>TODO list</h1>
+      <input type="text" v-model="inputVal" />
+      <button v-on:click="handleClick">Add</button>
+      <ul>
+        <li v-for="item in todoList">{{item}}</li>
+      </ul>
+    </div>
+  </body>
+</html>
